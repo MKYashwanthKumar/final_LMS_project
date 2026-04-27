@@ -170,17 +170,26 @@ select {
   z-index: 1;
 }
 
-.home-navbar {
-  position: sticky;
+.home-navbar,
+.gx-navbar {
+  position: fixed !important;
   top: 0;
-  z-index: 10;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99999;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 40px;
-  background: rgba(7, 17, 38, 0.78);
+  background: rgba(7, 17, 38, 0.92);
   backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
+}
+
+body {
+  padding-top: 95px;
 }
 
 .home-brand,
